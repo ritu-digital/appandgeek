@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/appandgeek/static/css/main.a61986b8.chunk.css",
+    "main.js": "/appandgeek/static/js/main.08279faa.chunk.js",
+    "main.js.map": "/appandgeek/static/js/main.08279faa.chunk.js.map",
+    "runtime-main.js": "/appandgeek/static/js/runtime-main.92cb136e.js",
+    "runtime-main.js.map": "/appandgeek/static/js/runtime-main.92cb136e.js.map",
+    "static/js/2.66c31454.chunk.js": "/appandgeek/static/js/2.66c31454.chunk.js",
+    "static/js/2.66c31454.chunk.js.map": "/appandgeek/static/js/2.66c31454.chunk.js.map",
+    "static/js/3.b1bef6f1.chunk.js": "/appandgeek/static/js/3.b1bef6f1.chunk.js",
+    "static/js/3.b1bef6f1.chunk.js.map": "/appandgeek/static/js/3.b1bef6f1.chunk.js.map",
+    "index.html": "/appandgeek/index.html",
+    "static/css/main.a61986b8.chunk.css.map": "/appandgeek/static/css/main.a61986b8.chunk.css.map",
+    "static/js/2.66c31454.chunk.js.LICENSE.txt": "/appandgeek/static/js/2.66c31454.chunk.js.LICENSE.txt",
+    "static/media/asset.0be5ac65.svg": "/appandgeek/static/media/asset.0be5ac65.svg",
+    "static/media/expertise.dd9b3852.svg": "/appandgeek/static/media/expertise.dd9b3852.svg",
+    "static/media/team.11304777.svg": "/appandgeek/static/media/team.11304777.svg",
+    "static/media/work.f0bb9f65.svg": "/appandgeek/static/media/work.f0bb9f65.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92cb136e.js",
+    "static/js/2.66c31454.chunk.js",
+    "static/css/main.a61986b8.chunk.css",
+    "static/js/main.08279faa.chunk.js"
+  ]
+}
