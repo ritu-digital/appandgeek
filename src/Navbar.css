@@ -1,0 +1,185 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 3rem 0;
+  height: 80px;
+  background-color: white;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  position: fixed;
+  top: -100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+  border-bottom: 0.1px solid rgba(216, 208, 208, 0.7);
+}
+.navbar.active {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.7s ease;
+}
+.navbar__logo {
+  color: #283c64;
+  text-decoration: none;
+}
+
+.navbarlogo-boxDesign {
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  background-color: #283c64;
+  color: white;
+  transform: rotate(-13deg);
+  margin: auto 8px;
+  display: inline-block;
+}
+.navbarlogo-boxDesign > .navbarlogo-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+.navbar__menuSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.navbar__menuToggleIcon {
+  display: none;
+}
+.navbar__subMenuList {
+  position: relative;
+}
+
+.navbar__subMenuList > li {
+  padding: 1.3rem 1.5rem;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.04rem;
+  /* color: rgba(255, 255, 255, 0.7); */
+  color: rgba(22, 21, 21, 0.7);
+  background-color: transparent;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar > a,
+.navbar__menuSection a {
+  text-decoration: none;
+}
+
+.navbar__subMenuList > li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.navbar__menuSection button {
+  color: white;
+  letter-spacing: 1px !important;
+  font-weight: 300;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  padding: 6px 10px;
+  font-size: 13px;
+  background-color: #009cde;
+  border-color: #009cde;
+}
+.navbar__menuSection button:hover {
+  cursor: pointer;
+  margin-top: -4px;
+  transition: 0.3s ease-in;
+  background-color: #009cde;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navbar {
+    padding: 0 20px;
+    background-color: white;
+    height: 60px;
+  }
+  .navbar__logo {
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 99;
+    color: var(--indigo);
+  }
+  .navbar__logo h2 {
+    color: #283c64;
+  }
+  .navbarlogo-boxDesign {
+    background-color: #283c64;
+    color: white;
+  }
+  .navbar__menuSection {
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  .navbar__menu {
+    right: 0;
+    display: block;
+    height: 275px;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    color: black;
+    background-color: var(--white);
+  }
+  .navbar__menuToggleIcon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-left: 90%;
+    cursor: pointer;
+    z-index: 90;
+    color: var(--secondary) !important;
+  }
+  .navbar__menuToggleIcon:hover {
+    color: var(--primary) !important;
+  }
+  .navbar__menu.active {
+    right: 0;
+    top: -30px;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .navbar__subMenuList {
+    display: block;
+    width: 100%;
+    top: 60px;
+    padding: 0 20px;
+  }
+  .navbar__subMenuList > li {
+    width: 100%;
+    padding: 1.3rem 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--secondary);
+  }
+
+  .navbar__subMenuList > li:hover {
+    color: var(--primary);
+  }
+
+  .navbar__menuSection button {
+    display: none;
+  }
+}
